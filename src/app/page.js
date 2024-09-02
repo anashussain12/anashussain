@@ -1,11 +1,13 @@
 import React from 'react'
+import Navbar from './Components/Navbar'
+import Hero from './Components/Hero'
 
 const page = () => {
   return (
-    <div className="text-4xl flex justify-center items-center mt-80">
-      Hey! I'm Anas
-    </div>
-    // vercel 
+    <>
+    <Navbar/>
+    <Hero/>
+    </>
   )
 }
 
