@@ -18,6 +18,7 @@ const Navbar = () => {
           <Link className=" outline-none border-none" href="/">
             Anas Hussain
             {/* Anas Hussain */}
+            {/* Anas Hussain */}
           </Link>
         </div>
 
