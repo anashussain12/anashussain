@@ -17,8 +17,6 @@ const Navbar = () => {
         <div className=" text-2xl font-bold hover:text-red-600 transition duration-300">
           <Link className=" outline-none border-none" href="/">
             Anas Hussain
-            {/* Anas Hussain */}
-            {/* Anas Hussain */}
           </Link>
         </div>
 
