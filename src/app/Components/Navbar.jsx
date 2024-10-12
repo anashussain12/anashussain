@@ -14,7 +14,7 @@ const Navbar = () => {
     <nav className="fixed  top-0 left-0 w-full  text-white shadow-md shadow-black z-50">
       <div className="bg-black md:bg-[#161513] container mx-auto px-6 lg:px-32 xl:px-32 py-4 flex justify-between items-center">
         {/* Logo */}
-        <div className=" text-2xl font-bold hover:text-gray-400 transition duration-300">
+        <div className=" text-2xl font-bold hover:text-red-600 transition duration-300">
           <Link className=" outline-none border-none" href="/">
             Anas Hussain
           </Link>
