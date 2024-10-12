@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { MdOnlinePrediction } from "react-icons/md";
 
 const Hero = () => {
   return (
@@ -21,10 +22,8 @@ const Hero = () => {
         </div>
         <div className="py-10 flex justify-center items-center">
           <button className="bg-black border border-gray-900 cursor-pointer text-white px-6 py-2 rounded-lg flex justify-center items-center">
-            <div className="p-1 bg-green-600 rounded-full w-2 h-2  "></div>
-            <button className="px-1">Let's work together</button>
+          <span className="p-1 bg-green-500 rounded-full mr-2"></span> Let's work together 
           </button>
-          <div></div>
         </div>
       </div>
     </>
