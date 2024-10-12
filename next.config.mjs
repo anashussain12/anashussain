@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-      domains: ['imgs.search.brave.com','w7.pngwing.com','threejscc-portfolio.vercel.app','img.lovepik.com'], // Add the external domain here
+      domains: ['imgs.search.brave.com','w7.pngwing.com','threejscc-portfolio.vercel.app',], // Add the external domain here
     },
   };
   
