@@ -5,7 +5,7 @@ import { MdOnlinePrediction } from "react-icons/md";
 const Hero = () => {
   return (
     <>
-      <div className="h-screen">
+      <div className="">
         <div className="flex justify-center text-white">
           <h1 className="text-2xl md:text-4xl pt-28">Hi, I am Anas 👋🏼</h1>
         </div>
@@ -20,12 +20,13 @@ const Hero = () => {
             className="w-full h-72 md:w-10/12 md:h-auto  lg:w-6/12 "
           />
         </div>
-        <div className="py-10 flex justify-center items-center">
+        <div className="py-12 flex justify-center items-center">
           <button className="bg-black border border-gray-900 cursor-pointer text-white px-6 py-2 rounded-lg flex justify-center items-center">
           <span className="p-1 bg-green-500 rounded-full mr-2"></span> Let's work together 
           </button>
         </div>
       </div>
+      
     </>
   );
 };
