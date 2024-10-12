@@ -11,11 +11,11 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-black text-white shadow-md z-50">
+    <nav className="fixed  top-0 left-0 w-full  text-white shadow-md shadow-black z-50">
       <div className="bg-black md:bg-[#161513] container mx-auto px-6 lg:px-32 xl:px-32 py-4 flex justify-between items-center">
         {/* Logo */}
         <div className=" text-2xl font-bold hover:text-gray-400 transition duration-300">
-          <Link className='bg-black outline-none border-none' href="/">Anas Hussain</Link>
+          <Link className=' outline-none border-none' href="/">Anas Hussain</Link>
         </div>
 
         {/* Navigation Links */}
@@ -59,10 +59,10 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="container mx-auto px-6 lg:px-32 xl:px-32 py-4 ">
+        <div className="bg-black container mx-auto px-6 lg:px-32 xl:px-32 py-4 ">
 
         {/* Navigation Links */}
-        <div className="grid md:hidden items-center">
+        <div className="bg-black grid md:hidden items-center">
           <Link className="hover:text-gray-400 transition duration-300 py-2" href="/">Home</Link>
           <Link className="hover:text-gray-400 transition duration-300 py-2" href="/">About</Link>
           <Link className="hover:text-gray-400 transition duration-300 py-2" href="/">Contacts</Link>
