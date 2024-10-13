@@ -87,9 +87,8 @@ const Grid = () => {
             />
           </div>
           <h1 className="text-[#aeafb59e] text-xl text-center">Contact me</h1>
-          <p className="text-center text-[#BEC1CF]">
-            hussainanas68@gmail.com
-          </p>
+          <p className="text-center text-[#BEC1CF]">hussainanas68@gmail.com</p>
+          {/* <p className="text-center text-[#BEC1CF]">hussainanas68@gmail.com</p> */}
         </div>
       </div>
     </>

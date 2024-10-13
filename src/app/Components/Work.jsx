@@ -1,9 +1,9 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import Image from "next/image";
 import { FaReact, FaNodeJs } from "react-icons/fa";
 import { SiExpress, SiMongodb } from "react-icons/si";
-import logo from '../images/aitoolcity.png'
+import logo from "../images/aitoolcity.png";
 // Data for each work item
 const works = [
   {
@@ -81,11 +81,18 @@ const WorkSection = () => {
         <div className="flex flex-col justify-start items-start w-full lg:w-1/2 mb-8 lg:mb-0">
           {/* Logo */}
           <div className="mb-4">
-            <Image src={currentWork.logo} width={120} height={120} alt="Company Logo" />
+            <Image
+              src={currentWork.logo}
+              width={120}
+              height={120}
+              alt="Company Logo"
+            />
           </div>
 
           {/* Title and Description */}
-          <h1 className="text-2xl font-bold text-white mb-4">{currentWork.title}</h1>
+          <h1 className="text-2xl font-bold text-white mb-4">
+            {currentWork.title}
+          </h1>
           <p className="text-[#909196] mb-4">{currentWork.description}</p>
 
           {/* Tech Stack */}

@@ -22,11 +22,11 @@ const Hero = () => {
         </div>
         <div className="py-12 flex justify-center items-center">
           <button className="bg-black border border-gray-900 cursor-pointer text-white px-6 py-2 rounded-lg flex justify-center items-center">
-          <span className="p-1 bg-green-500 rounded-full mr-2 "></span> Let's work together 
+            <span className="p-1 bg-green-500 rounded-full mr-2 "></span> Let's
+            work together
           </button>
         </div>
       </div>
-      
     </>
   );
 };
