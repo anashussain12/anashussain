@@ -19,7 +19,7 @@ const Grid = () => {
           <div>
             <h1 className="font-bold text-xl pb-2">Hi, I’m Anas Hussain</h1>
             <p className="text-[#909196]">
-              With 12 years of experience, I have honed my skills in both
+              With 2 years of experience, I have honed my skills in both
               frontend and backend dev, creating dynamic and responsive
               websites.
             </p>
@@ -88,7 +88,6 @@ const Grid = () => {
           </div>
           <h1 className="text-[#aeafb59e] text-xl text-center">Contact me</h1>
           <p className="text-center text-[#BEC1CF]">hussainanas68@gmail.com</p>
-          {/* <p className="text-center text-[#BEC1CF]">hussainanas68@gmail.com</p> */}
         </div>
       </div>
     </>
