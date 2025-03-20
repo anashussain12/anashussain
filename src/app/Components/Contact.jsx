@@ -1,6 +1,5 @@
 "use client";
 import Head from "next/head";
-import Script from "next/script";
 import React, { useState } from "react";
 
 const ContactPage = () => {
@@ -38,11 +37,11 @@ const ContactPage = () => {
   return (
     <>
       <Head>
-        <Script
+        <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9584165839000205"
           crossorigin="anonymous"
-        />
+        ></script>
       </Head>
 
       <div className="text-white max-w-lg mx-auto p-6">
