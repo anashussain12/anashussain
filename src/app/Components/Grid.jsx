@@ -1,10 +1,18 @@
 import Image from "next/image";
 import React from "react";
 import globe from "../images/globe.png";
+import Head from "next/head";
 
 const Grid = () => {
   return (
     <>
+      <Head>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9584165839000205"
+          crossorigin="anonymous"
+        ></script>
+      </Head>
       <div className="grid grid-cols-1 gap-4 pb-16 px-6 md:grid-cols-1 lg:grid-cols-3 md:px-8 lg:px-32 xl:px-32">
         {/* First Column - Hi, I'm Anas Hussain */}
         <div className="text-white border border-[#2B2A29] rounded-xl p-5 lg:col-span-2 xl:col-span-2">
