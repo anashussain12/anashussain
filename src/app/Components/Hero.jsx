@@ -22,7 +22,7 @@ const Hero = () => {
         crossOrigin="anonymous"
       />
 
-      <div className="flex justify-center my-10 bg-red-600">
+      <div className="flex justify-center my-20 ">
         <ins
           className="adsbygoogle"
           style={{ display: "block" }}
