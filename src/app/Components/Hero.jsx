@@ -38,6 +38,7 @@ const Hero = () => {
             alt="Hero Image"
           />
         </div>
+        {/* </div> */}
         
 
         <div className="py-12 flex justify-center items-center">
