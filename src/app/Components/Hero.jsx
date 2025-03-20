@@ -1,6 +1,7 @@
 "use client";
 import Head from "next/head";
 import Image from "next/image";
+import Script from "next/script";
 import React, { useEffect } from "react";
 
 const Hero = () => {
@@ -15,11 +16,11 @@ const Hero = () => {
   return (
     <>
       <Head>
-        <script
+        <Script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9584165839000205"
           crossorigin="anonymous"
-        ></script>
+        />
       </Head>
 
       <div>

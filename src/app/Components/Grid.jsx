@@ -2,16 +2,17 @@ import Image from "next/image";
 import React from "react";
 import globe from "../images/globe.png";
 import Head from "next/head";
+import Script from "next/script";
 
 const Grid = () => {
   return (
     <>
       <Head>
-        <script
+        <Script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9584165839000205"
           crossorigin="anonymous"
-        ></script>
+        />
       </Head>
       <div className="grid grid-cols-1 gap-4 pb-16 px-6 md:grid-cols-1 lg:grid-cols-3 md:px-8 lg:px-32 xl:px-32">
         {/* First Column - Hi, I'm Anas Hussain */}

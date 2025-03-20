@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { FaTwitter, FaFacebook, FaInstagram } from "react-icons/fa";
 import Head from "next/head";
+import Script from "next/script";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,11 +15,11 @@ const Navbar = () => {
   return (
     <>
       <Head>
-        <script
+        <Script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9584165839000205"
           crossorigin="anonymous"
-        ></script>
+        />
       </Head>
 
       <nav className="fixed  top-0 left-0 w-full  text-white shadow-md shadow-black z-50">

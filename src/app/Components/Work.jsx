@@ -5,6 +5,7 @@ import { FaReact, FaNodeJs } from "react-icons/fa";
 import { SiExpress, SiMongodb } from "react-icons/si";
 import logo from "../images/aitoolcity.png";
 import Head from "next/head";
+import Script from "next/script";
 // Data for each work item
 const works = [
   {
@@ -74,11 +75,11 @@ const WorkSection = () => {
   return (
     <>
       <Head>
-        <script
+        <Script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9584165839000205"
           crossorigin="anonymous"
-        ></script>
+        />
       </Head>
       <div>
         <h1 className="capitalize text-[#BEC1CF] px-5 text-3xl md:text-5xl font-semibold md:px-8 lg:px-32 xl:px-32">

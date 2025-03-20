@@ -5,15 +5,16 @@ import Grid from "./Components/Grid";
 import Work from "./Components/Work";
 import Contact from "./Components/Contact";
 import Head from "next/head";
+import Script from "next/script";
 const page = () => {
   return (
     <>
       <Head>
-        <script
+        <Script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9584165839000205"
           crossorigin="anonymous"
-        ></script>
+        />
       </Head>
 
       <Navbar />
