@@ -38,12 +38,6 @@ const Hero = () => {
             alt="Hero Image"
           />
         </div>
-        <div className="py-12 flex justify-center items-center">
-          <button className="bg-black border border-gray-900 cursor-pointer text-white px-6 py-2 rounded-lg flex justify-center items-center">
-            <span className="p-1 bg-green-500 rounded-full mr-2"></span> Let's
-            work together
-          </button>
-        </div>
 
         {/* ✅ Google AdSense Ad Below the Hero Section */}
         <div className="flex justify-center my-10 bg-red-600">
@@ -54,6 +48,13 @@ const Hero = () => {
             data-ad-slot="7184032042"
             data-ad-format="auto"
           ></ins>
+        </div>
+
+        <div className="py-12 flex justify-center items-center">
+          <button className="bg-black border border-gray-900 cursor-pointer text-white px-6 py-2 rounded-lg flex justify-center items-center">
+            <span className="p-1 bg-green-500 rounded-full mr-2"></span> Let's
+            work together
+          </button>
         </div>
       </div>
     </>
