@@ -9,19 +9,34 @@ import Script from "next/script";
 const page = () => {
   return (
     <>
-      <Head>
+      {/* <Head>
         <Script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9584165839000205"
           crossorigin="anonymous"
         />
-      </Head>
-
+      </Head> */}
+{/* 
       <Navbar />
       <Hero />
       <Grid />
       <Work />
-      <Contact />
+      <Contact /> */}
+
+    <main className="flex items-center justify-center h-screen bg-black text-white px-4">
+      <div className="text-center">
+        <h1 className="text-4xl md:text-6xl font-bold mb-4 animate-pulse">
+          🚧 Coming Soon
+        </h1>
+        <p className="text-lg md:text-2xl text-gray-300 mb-8">
+          My portfolio website is under construction.
+        </p>
+        <p className="text-md text-gray-400">
+          Stay tuned! Something amazing is on the way.
+        </p>
+      </div>
+    </main>
+
     </>
   );
 };
