@@ -31,9 +31,7 @@ const page = () => {
         <p className="text-lg md:text-2xl text-gray-300 mb-8">
           My portfolio website is under construction.
         </p>
-        <p className="text-md text-gray-400">
-          Stay tuned! Something amazing is on the way.
-        </p>
+        
       </div>
     </main>
 
