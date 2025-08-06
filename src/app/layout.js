@@ -1,7 +1,10 @@
-import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
+import Header from "./components/Header";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Poppins({ subsets: ['latin'],
+  weight: ['400', '600', '700', '800'],
+  display: 'swap', });
 
 export const metadata = {
   title: "Anas Hussain | Frontend Engineer",
@@ -22,14 +25,15 @@ export const metadata = {
         width: 1200,
         height: 630,
         alt: "anashussain",
-      },  
+      },
     ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Anas Hussain | Frontend Engineer",
-    description: "A Frontend Developer specializes in building visually appealing, user-friendly, and high-performance websites using modern web technologies. They focus on creating responsive designs, optimizing website speed, and improving user experience to enhance SEO (Search Engine Optimization) rankings.",
+    description:
+      "A Frontend Developer specializes in building visually appealing, user-friendly, and high-performance websites using modern web technologies. They focus on creating responsive designs, optimizing website speed, and improving user experience to enhance SEO (Search Engine Optimization) rankings.",
     images: ["https://anashussain.com/images/aitoolcity.png"],
   },
 };
@@ -38,7 +42,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}> <Header/> {children}
+
+      </body>
     </html>
   );
 }
