@@ -1,7 +1,7 @@
 import React from "react";
-import TechStack from "./Components/techstack";
-import About from "./Components/About"
-import Projects from "./Components/Projects";
+import TechStack from "./components/techstack";
+import About from "./components/About"
+import Projects from "./components/Projects";
 import Hero from "./components/Hero";
 import Contact from "./components/Contact";
 
