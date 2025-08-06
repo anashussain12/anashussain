@@ -20,7 +20,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="sticky top-0 z-50 backdrop-blur-lg bg-white/70 border-b border-gray-200 w-full">
+      <div className="sticky top-0 z-50  bg-white/70 border-b border-gray-200 w-full">
         <nav className="max-w-screen-xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
           {/* Logo */}
           <div className="text-4xl md:text-4xl font-extrabold tracking-wide transition-transform duration-300 hover:scale-105">
@@ -76,7 +76,7 @@ const Navbar = () => {
 
         {/* Mobile Sidebar */}
         <div
-          className={`fixed top-0 left-0 h-full w-64 bg-white shadow-lg transform transition-transform duration-300 z-40 ${
+          className={`fixed top-0 left-0 h-full w-64 bg-white z-50 shadow-xl transform transition-transform duration-300 ${
             menuOpen ? "translate-x-0" : "-translate-x-full"
           }`}
         >
@@ -129,13 +129,12 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* Overlay */}
         {menuOpen && (
-          <div
-            className="fixed inset-0 bg-black bg-opacity-30 z-30 transition-opacity duration-300"
-            onClick={toggleMenu}
-          />
-        )}
+  <div
+    className="fixed inset-0 bg-black bg-opacity-40 z-40 transition-opacity duration-300"
+    onClick={toggleMenu}
+  />
+)}
       </div>
     </>
   );

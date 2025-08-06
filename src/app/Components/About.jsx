@@ -5,7 +5,6 @@ const About = () => {
   return (
     <section id="about" className="py-20 bg-white">
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6">
-        {/* About Me */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -20,7 +19,6 @@ const About = () => {
           </p>
         </motion.div>
 
-        {/* Work Experience */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -37,22 +35,6 @@ const About = () => {
                 Built responsive and optimized apps using Next.js, Tailwind. Managed full project cycles.
               </p>
             </div>
-
-            {/* <div className="border-l-4 border-gray-500 pl-6">
-              <h3 className="text-xl font-semibold text-gray-800">Frontend Developer – PostTechSofi</h3>
-              <span className="text-sm text-gray-500">March 2024 – August 2024</span>
-              <p className="mt-2 text-gray-600">
-                Developed UI components, improved performance, and translated designs to clean frontend code.
-              </p>
-            </div>
-
-            <div className="border-l-4 border-gray-500 pl-6">
-              <h3 className="text-xl font-semibold text-gray-800">Social Media Manager – The Cleo Token</h3>
-              <span className="text-sm text-gray-500">January 2024 – June 2024</span>
-              <p className="mt-2 text-gray-600">
-                Managed social media campaigns, boosted Discord/Twitter engagement by 40%, and led community strategy.
-              </p>
-            </div> */}
           </div>
         </motion.div>
 

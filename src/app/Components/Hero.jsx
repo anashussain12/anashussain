@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import Techstack from "./TechStack";
+import Techstack from "./Techstack.jsx";
 
 const Hero = () => {
   return (
