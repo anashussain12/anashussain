@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Techstack from "./Techstack.js";
+import Anas from "../../../public/anas-vector.png"
 
 const Hero = () => {
   return (
@@ -17,7 +18,7 @@ const Hero = () => {
           modern tools like Next.js, React, and Tailwind CSS.
         </p>
         <Link
-          href="/contact"
+          href="#contact"
           className="flex text-center justify-center items-center  bg-black text-white px-6 py-3 rounded-lg font-medium hover:bg-gray-800 transition"
         >
           Let’s Work Together
@@ -27,7 +28,8 @@ const Hero = () => {
       {/* Image or Illustration */}
       <div className="w-full md:w-1/2 flex justify-center animate-slide-in-right opacity-0 animate-fade-in delay-500">
         <Image
-          src="https://static.vecteezy.com/system/resources/previews/048/216/761/non_2x/modern-male-avatar-with-black-hair-and-hoodie-illustration-free-png.png"
+          // src="https://static.vecteezy.com/system/resources/previews/048/216/761/non_2x/modern-male-avatar-with-black-hair-and-hoodie-illustration-free-png.png"
+          src={Anas}
           alt="Hero Illustration"
           width={500}
           height={500}
