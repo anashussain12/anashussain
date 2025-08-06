@@ -27,7 +27,7 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="max-w-screen-xl mx-auto px-4 sm:px-6 py-20" id="contact">
+    <div id="contact" className="max-w-screen-xl mx-auto px-4 sm:px-6 py-20">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
