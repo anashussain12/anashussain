@@ -1,9 +1,11 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import Techstack from "./TechStack";
 
 const Hero = () => {
   return (
+    <>
     <section className="max-w-screen-xl mx-auto px-4 sm:px-6 py-16 flex flex-col-reverse md:flex-row items-center justify-between gap-10">
       {/* Text Content */}
       <div className="w-full md:w-1/2 animate-slide-in-left opacity-0 animate-fade-in delay-200">
@@ -34,6 +36,9 @@ const Hero = () => {
         />
       </div>
     </section>
+    <Techstack/>
+    
+    </>
   );
 };
 
