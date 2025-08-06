@@ -29,7 +29,7 @@ const About = () => {
           <h2 className="text-3xl font-bold mb-8 text-gray-800">Work Experience</h2>
           <div className="space-y-8">
             <div className="border-l-4 border-gray-500 pl-6">
-              <h3 className="text-xl font-semibold text-gray-800">Reac.js Developer – Freelancer</h3>
+              <h3 className="text-xl font-semibold text-gray-800">NextJS Developer – Freelancer</h3>
               <span className="text-sm text-gray-500">October 2022 – Present</span>
               <p className="mt-2 text-gray-600">
                 Built responsive and optimized apps using Next.js, Tailwind. Managed full project cycles.

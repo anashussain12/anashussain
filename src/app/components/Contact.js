@@ -5,7 +5,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 export default function ContactForm() {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [submitted, setSubmitted] = useState(false);
-  const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -13,25 +12,29 @@ export default function ContactForm() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setLoading(true);
 
+    const tempData = { ...formData }; // Save user input
+
+    // ✅ Delay reset by 1 second
+    setTimeout(() => {
+      setFormData({ name: '', email: '', message: '' });
+    }, 1000);
+
+    // Submit in background
     const res = await fetch('https://formsubmit.co/ajax/hussainanas68@gmail.com', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
         Accept: 'application/json',
       },
-      body: JSON.stringify(formData),
+      body: JSON.stringify(tempData),
     });
 
     const data = await res.json();
-    setLoading(false);
 
     if (data.success === 'true') {
       setSubmitted(true);
-      setFormData({ name: '', email: '', message: '' }); // ✅ Reset form
-
-      setTimeout(() => setSubmitted(false), 4000); // ✅ Hide message after 4s
+      setTimeout(() => setSubmitted(false), 4000);
     }
   };
 
@@ -81,12 +84,9 @@ export default function ContactForm() {
 
         <button
           type="submit"
-          disabled={loading}
-          className={`w-full bg-black text-white px-6 py-3 rounded-md transition ${
-            loading ? 'opacity-50 cursor-not-allowed' : 'hover:bg-gray-800'
-          }`}
+          className="w-full bg-black text-white px-6 py-3 rounded-md hover:bg-gray-800 transition"
         >
-          {loading ? 'Sending...' : 'Send Message'}
+          Send Message
         </button>
 
         <AnimatePresence>
