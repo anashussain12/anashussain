@@ -1,8 +1,9 @@
 import React from "react";
-import TechStack from "./components/TechStack";
+import TechStack from "./Components/techstack";
 import About from "./Components/About"
 import Projects from "./Components/Projects";
 import Hero from "./components/Hero";
+import Contact from "./components/Contact";
 
 const page = () => {
   return (
@@ -11,6 +12,7 @@ const page = () => {
       <TechStack />
       <About/>
       <Projects/>
+      <Contact/>
     </>
   );
 };

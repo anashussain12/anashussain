@@ -6,14 +6,14 @@ const projects = [
   {
     title: 'MR.BARBER UNISEX SALON',
     role: 'Full Stack Developer',
-    description: 'Developed a Full Stack Barber website with admin dashboard which handles orders ',
+    description: 'Developed a Full Stack Barber website with admin dashboard which handles orders. ',
     tech: ['Next.js', 'Authentication', 'Firebase', 'Admin Dashboard'],
     link: 'https://www.mistrbarber.com'
   },
   {
     title: 'Aitoolcity',
     role: 'Full Stack Developer',
-    description: 'Developed a categorized directory of AI tools using Next.js, Tailwind CSS, and Firebase. Includes search, filtering features',
+    description: 'Developed a categorized directory of AI tools using Next.js, Tailwind CSS, and Firebase. Includes search, filtering features.',
     tech: ['Next.js', 'Firebase', 'Admin Dashboard'],
     link: 'https://aitoolcity.com'
   },
@@ -48,7 +48,7 @@ const ProfessionalProjects = () => {
                 <p className="text-gray-700 text-sm mt-2">{project.description}</p>
                 <div className="flex flex-wrap gap-2 mt-4">
                   {project.tech.map((tech, i) => (
-                    <span key={i} className="text-xs bg-blue-100 text-gray-700 px-2 py-1 rounded-full">{tech}</span>
+                    <span key={i} className="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded-full">{tech}</span>
                   ))}
                 </div>
               </div>

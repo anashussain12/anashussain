@@ -31,14 +31,14 @@ const About = () => {
           <h2 className="text-3xl font-bold mb-8 text-gray-800">Work Experience</h2>
           <div className="space-y-8">
             <div className="border-l-4 border-gray-500 pl-6">
-              <h3 className="text-xl font-semibold text-gray-800">Next.js Developer – Freelancer</h3>
-              <span className="text-sm text-gray-500">October 2024 – Present</span>
+              <h3 className="text-xl font-semibold text-gray-800">Reac.js Developer – Freelancer</h3>
+              <span className="text-sm text-gray-500">October 2022 – Present</span>
               <p className="mt-2 text-gray-600">
-                Built responsive and SEO-optimized apps using Next.js, Tailwind, and CMS. Managed full project cycles.
+                Built responsive and optimized apps using Next.js, Tailwind. Managed full project cycles.
               </p>
             </div>
 
-            <div className="border-l-4 border-gray-500 pl-6">
+            {/* <div className="border-l-4 border-gray-500 pl-6">
               <h3 className="text-xl font-semibold text-gray-800">Frontend Developer – PostTechSofi</h3>
               <span className="text-sm text-gray-500">March 2024 – August 2024</span>
               <p className="mt-2 text-gray-600">
@@ -52,7 +52,7 @@ const About = () => {
               <p className="mt-2 text-gray-600">
                 Managed social media campaigns, boosted Discord/Twitter engagement by 40%, and led community strategy.
               </p>
-            </div>
+            </div> */}
           </div>
         </motion.div>
 
