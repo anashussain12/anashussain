@@ -1,12 +1,10 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Head from "next/head";
-import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Anas Hussain | Frontend Web Developer",
+  title: "Anas Hussain | Frontend Engineer",
   description:
     "A Frontend Developer specializes in building visually appealing, user-friendly, and high-performance websites using modern web technologies. They focus on creating responsive designs, optimizing website speed, and improving user experience to enhance SEO (Search Engine Optimization) rankings.",
   keywords:
@@ -30,7 +28,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Anas Hussain | Frontend Web Developer",
+    title: "Anas Hussain | Frontend Engineer",
     description: "A Frontend Developer specializes in building visually appealing, user-friendly, and high-performance websites using modern web technologies. They focus on creating responsive designs, optimizing website speed, and improving user experience to enhance SEO (Search Engine Optimization) rankings.",
     images: ["https://anashussain.com/images/aitoolcity.png"],
   },
@@ -39,13 +37,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Head>
-        <Script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9584165839000205"
-          crossorigin="anonymous"
-        />
-      </Head>
+      
       <body className={inter.className}>{children}</body>
     </html>
   );
