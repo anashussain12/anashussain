@@ -12,6 +12,11 @@ export const metadata = {
   keywords:
     "Frontend Developer, SEO Optimization, web development, Responsive Design, Mobile-Friendly Websites,User Interface (UI) Design,JavaScript Developer,React Developer,Next.js Developer,Web Performance Optimization,,Core Web Vitals,SEO Best Practices,HTML/CSS,Cross-Browser Compatibility,Page Load Speed,Search Engine Visibility,Structured Data,Meta Tags Implementation,JavaScript Frameworks,Accessibility Improvements,Front-End Development",
   authors: [{ name: "Anas Hussain", url: "https://anashussain.com" }],
+  icons: {
+    icon: "/favico.png", // Make sure this file exists in /public folder
+    shortcut: "/favico.png",
+    apple: "/favico.png", // Optional for Apple devices
+  },
   openGraph: {
     title: "Anas Hussain | Frontend Web Developer",
     description:
