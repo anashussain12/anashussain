@@ -1,64 +1,41 @@
-'use client'
-import { motion } from 'framer-motion'
+import About from "../components/About";
 
-const About = () => {
-  return (
-    <section id="about" className="py-44 bg-white">
-      <div className="max-w-screen-xl mx-auto px-4 sm:px-6">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="mb-16"
-        >
-          <h2 className="text-4xl md:text-6xl text-center font-bold mb-4 text-gray-800">About Me</h2>
-          <p className="text-gray-600 leading-relaxed text-center max-w-3xl mx-auto">
-            I'm a passionate web developer specializing in modern web technologies like React, Next.js, Tailwind CSS, and Node.js. 
-            With a strong foundation in both frontend and backend, I love building sleek, high-performance applications that solve real-world problems.
-          </p>
-        </motion.div>
+export const metadata = {
+  title: "About Anas Hussain | Web Developer & Next.js Specialist",
+  description:
+    "Discover more about Anas Hussain — a dedicated web developer with expertise in React, Next.js, and modern web technologies. Learn about his background, experience, and education.",
+  keywords: [
+    "Anas Hussain",
+    "About Anas Hussain",
+    "Web Developer",
+    "Next.js Developer",
+    "Frontend Developer Portfolio",
+    "React Developer",
+  ],
+  openGraph: {
+    title: "About Anas Hussain | Web Developer & Next.js Specialist",
+    description:
+      "Explore Anas Hussain’s experience as a frontend developer skilled in React, Next.js, and Tailwind CSS.",
+    url: "https://anashussain.com/about",
+    type: "website",
+    images: [
+      {
+        url: "https://anashussain.com/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Anas Hussain",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Anas Hussain | Web Developer & Next.js Specialist",
+    description:
+      "Explore Anas Hussain’s background in frontend development and his expertise in modern web frameworks.",
+    images: ["https://anashussain.com/og-image.jpg"],
+  },
+};
 
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="mb-16"
-        >
-          <h2 className="text-3xl font-bold mb-8 text-gray-800">Work Experience</h2>
-          <div className="space-y-8">
-            <div className="border-l-4 border-gray-500 pl-6">
-              <h3 className="text-xl font-semibold text-gray-800">NextJS Developer – Freelancer</h3>
-              <span className="text-sm text-gray-500">October 2022 – Present</span>
-              <p className="mt-2 text-gray-600">
-                Built responsive and optimized apps using Next.js, Tailwind. Managed full project cycles.
-              </p>
-            </div>
-          </div>
-        </motion.div>
-
-        {/* Education */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-        >
-          <h2 className="text-3xl font-bold mb-8 text-gray-800">Education</h2>
-          <div className="space-y-8">
-            <div className="border-l-4 border-gray-500 pl-6">
-              <h3 className="text-xl font-semibold text-gray-800">BS Computer Science – University Of Management And Technology</h3>
-              <span className="text-sm text-gray-500">2024 - 2028</span>
-              <p className="mt-2 text-gray-600">
-                Currently pursuing a Bachelor's degree in Computer Science.
-              </p>
-            </div>
-          </div>
-        </motion.div>
-      </div>
-    </section>
-  )
+export default function AboutPage() {
+  return <About />;
 }
-
-export default About
