@@ -20,7 +20,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "https://anashussain.com/og-image.jpg",
+        url: "https://anashussain.com/og-image.png",
         width: 1200,
         height: 630,
         alt: "Anas Hussain",
@@ -32,7 +32,7 @@ export const metadata = {
     title: "About Anas Hussain | Web Developer & Next.js Specialist",
     description:
       "Explore Anas Hussain’s background in frontend development and his expertise in modern web frameworks.",
-    images: ["https://anashussain.com/og-image.jpg"],
+    images: ["https://anashussain.com/og-image.png"],
   },
 };
 

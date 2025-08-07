@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://anashussain.com
+
+# Sitemaps
+Sitemap: https://anashussain.com/sitemap.xml

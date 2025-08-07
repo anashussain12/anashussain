@@ -1,69 +1,53 @@
-'use client'
-import { motion } from 'framer-motion'
-import { FaExternalLinkAlt } from 'react-icons/fa'
+import Projects from "../components/Projects";
+export const metadata = {
+  title: "Professional Web Development Projects | Anas Hussain",
+  description:
+    "Explore a portfolio of professional web development projects by Anas Hussain, including full-stack applications, admin dashboards, and responsive UI designs built with Next.js, Firebase, and Tailwind CSS.",
 
-const projects = [
-  {
-    title: 'MR.BARBER UNISEX SALON',
-    role: 'Full Stack Developer',
-    description: 'Developed a Full Stack Barber website with admin dashboard which handles orders. ',
-    tech: ['Next.js', 'Authentication', 'Firebase', 'Admin Dashboard'],
-    link: 'https://www.mistrbarber.com'
-  },
-  {
-    title: 'Aitoolcity',
-    role: 'Full Stack Developer',
-    description: 'Developed a categorized directory of AI tools using Next.js, Tailwind CSS, and Firebase. Includes search, filtering features.',
-    tech: ['Next.js', 'Firebase', 'Admin Dashboard'],
-    link: 'https://aitoolcity.com'
-  },
-  {
-    title: 'Videograpger Portfolio',
-    role: 'Front-End Developer',
-    description: 'Designed and developed a modern portfolio for a professional photographer client, featuring image galleries and smooth transitions.',
-    tech: ['Next.js', 'Tailwind CSS', 'Framer Motion'],
-    link: 'https://asfarkhan.vercel.app/'
-  },
-]
+  keywords: [
+    "Anas Hussain",
+    "Web Developer Portfolio",
+    "Next.js Projects",
+    "Full Stack Developer",
+    "Frontend Developer",
+    "Tailwind CSS Portfolio",
+    "Firebase Projects",
+    "Admin Dashboard",
+    "Modern Web Design",
+    "Professional Projects",
+  ],
 
-const ProfessionalProjects = () => {
+  openGraph: {
+    title: "Professional Web Development Projects | Anas Hussain",
+    description:
+      "Browse high-quality full-stack and front-end projects built with modern technologies like Next.js, Tailwind CSS, Firebase, and more. Created by web developer Anas Hussain.",
+    url: "https://anashussain.com/projects",
+    siteName: "Anas Hussain Portfolio",
+    images: [
+      {
+        url: "https://anashussain.com/og-projects.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Web Projects Portfolio by Anas Hussain",
+      },
+    ],
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Professional Web Development Projects | Anas Hussain",
+    description:
+      "See full-stack and front-end projects crafted using Next.js, Firebase, Tailwind CSS, and more. Explore the portfolio of developer Anas Hussain.",
+    images: ["https://anashussain.com/og-projects.jpg"],
+  },
+};
+const page = () => {
   return (
-    <section id="projects" className="py-44 bg-gray-50">
-      <div className="max-w-screen-xl mx-auto px-4 sm:px-6">
-        <h2 className="text-4xl md:text-5xl font-bold text-center text-gray-800 mb-12">
-          Professional Projects
-        </h2>
-
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {projects.map((project, index) => (
-            <motion.div
-              key={index}
-              whileHover={{ scale: 1.03 }}
-              transition={{ duration: 0.3 }}
-              className="bg-white rounded-2xl shadow-md p-6 flex flex-col justify-between"
-            >
-              <div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">{project.title}</h3>
-                <p className="text-sm text-gray-500 mb-1 italic">{project.role}</p>
-                <p className="text-gray-700 text-sm mt-2">{project.description}</p>
-                <div className="flex flex-wrap gap-2 mt-4">
-                  {project.tech.map((tech, i) => (
-                    <span key={i} className="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded-full">{tech}</span>
-                  ))}
-                </div>
-              </div>
-
-              <div className="mt-6 text-right">
-                <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-sm text-black hover:underline inline-flex items-center gap-1">
-                  View Project <FaExternalLinkAlt className="text-xs" />
-                </a>
-              </div>
-            </motion.div>
-          ))}
-        </div>
-      </div>
-    </section>
+    <>
+    <Projects/>
+    </>
   )
 }
 
-export default ProfessionalProjects
+export default page

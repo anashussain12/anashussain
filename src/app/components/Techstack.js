@@ -62,7 +62,6 @@ const icons = [
   },
 ];
 
-
 const HeroSection = () => {
   return (
     <section className="py-36 bg-gray-50 min-h-screen flex flex-col justify-center items-center text-center px-4">

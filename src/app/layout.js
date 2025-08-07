@@ -27,7 +27,7 @@ export const metadata = {
     siteName: "Anashussain",
     images: [
       {
-        url: "https://anashussain.com/images/aitoolcity.png",
+        url: "https://anashussain.com/public/anas-vector.png",
         width: 1200,
         height: 630,
         alt: "anashussain",
@@ -40,7 +40,7 @@ export const metadata = {
     title: "Anas Hussain | Frontend Engineer",
     description:
       "A Frontend Developer specializes in building visually appealing, user-friendly, and high-performance websites using modern web technologies. They focus on creating responsive designs, optimizing website speed, and improving user experience to enhance SEO (Search Engine Optimization) rankings.",
-    images: ["https://anashussain.com/images/aitoolcity.png"],
+    images: ["https://anashussain.com/public/anas-vector.png"],
   },
 };
 
