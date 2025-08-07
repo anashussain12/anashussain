@@ -62,9 +62,10 @@ const icons = [
   },
 ];
 
+
 const HeroSection = () => {
   return (
-    <section className="bg-gray-50 min-h-screen flex flex-col justify-center items-center text-center px-4 -mb-24">
+    <section className="py-36 bg-gray-50 min-h-screen flex flex-col justify-center items-center text-center px-4">
       <motion.h1
         className="text-4xl md:text-6xl font-bold mb-6"
         initial={{ opacity: 0, y: 40 }}
@@ -87,7 +88,7 @@ const HeroSection = () => {
       </motion.p>
 
       <motion.div
-        className="grid grid-cols-4 sm:grid-cols-3 md:grid-cols-7 sm:gap-10 md:gap-28"
+        className="grid grid-cols-5 sm:grid-cols-3 md:grid-cols-7 gap-5 sm:gap-10 md:gap-28"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: false, amount: 0.3 }}
@@ -96,7 +97,7 @@ const HeroSection = () => {
         {icons.map((icon, index) => (
           <motion.div
             key={index}
-            className=" w-16 h-16 md:w-20 md:h-20 flex justify-center items-center"
+            className="w-16 h-16 md:w-20 md:h-20 flex justify-center items-center"
             variants={{
               hidden: { opacity: 0, scale: 0.8 },
               visible: { opacity: 1, scale: 1 },
@@ -108,11 +109,23 @@ const HeroSection = () => {
               alt={icon.alt}
               width={80}
               height={80}
-              className=" object-contain hover:scale-110 transition-transform duration-300"
+              className="object-contain hover:scale-110 transition-transform duration-300"
             />
           </motion.div>
         ))}
       </motion.div>
+
+      {/* 👇 Let's Connect button */}
+      <motion.a
+        href="/contact"
+        className="mt-20 inline-block bg-black text-white text-lg font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-gray-600 transition-colors duration-300"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: false, amount: 0.3 }}
+        transition={{ duration: 0.6, delay: 0.4 }}
+      >
+        Let's Connect
+      </motion.a>
     </section>
   );
 };

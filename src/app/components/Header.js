@@ -12,10 +12,10 @@ const Navbar = () => {
   };
 
   const navLinks = [
-    { name: "Home", href: "#" },
-    { name: "About", href: "#about" },
-    { name: "Projects", href: "#projects" },
-    { name: "Contact", href: "#contact" },
+    { name: "Home", href: "/" },
+    { name: "About", href: "/about" },
+    { name: "Projects", href: "/projects" },
+    { name: "Contact", href: "/contact" },
   ];
 
   return (
@@ -24,7 +24,7 @@ const Navbar = () => {
         <nav className="max-w-screen-xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
           {/* Logo */}
           <div className="text-4xl md:text-4xl font-extrabold tracking-wide transition-transform duration-300 hover:scale-105">
-            <Link href="#">Anas Hussain</Link>
+            <Link href="/">Anas Hussain</Link>
           </div>
 
           {/* Desktop Links */}
