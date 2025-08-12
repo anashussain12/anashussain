@@ -28,7 +28,6 @@ const Hero = () => {
       {/* Image or Illustration */}
       <div className="w-full md:w-1/2 flex justify-center animate-slide-in-right opacity-0 animate-fade-in delay-500">
         <Image
-          // src="https://static.vecteezy.com/system/resources/previews/048/216/761/non_2x/modern-male-avatar-with-black-hair-and-hoodie-illustration-free-png.png"
           src={Anas}
           alt="Hero Illustration"
           width={500}

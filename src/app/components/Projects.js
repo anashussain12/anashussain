@@ -18,7 +18,7 @@ const projects = [
     link: 'https://aitoolcity.com'
   },
   {
-    title: 'Videograpger Portfolio',
+    title: 'Videographer Portfolio',
     role: 'Front-End Developer',
     description: 'Designed and developed a modern portfolio for a professional photographer client, featuring image galleries and smooth transitions.',
     tech: ['Next.js', 'Tailwind CSS', 'Framer Motion'],
