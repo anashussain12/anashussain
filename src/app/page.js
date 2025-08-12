@@ -24,8 +24,6 @@ const Hero = () => {
           Let’s Work Together
         </Link>
       </div>
-
-      {/* Image or Illustration */}
       <div className="w-full md:w-1/2 flex justify-center animate-slide-in-right opacity-0 animate-fade-in delay-500">
         <Image
           src={Anas}
@@ -38,7 +36,6 @@ const Hero = () => {
       </div>
     </section>
     <Techstack/>
-    
     </>
   );
 };
